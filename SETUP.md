@@ -2,7 +2,7 @@
 # Setting Up
 
 ### Requirements:
-1. Amazon AWS Bucket or some Hosting Platform, The plugin by default uses AWS Bucket
+1. Amazon AWS Buceket or some Hosting Platform, The plugin by default uses AWS Bucket
 
 ### Setting Up AWS Bucket:
 
