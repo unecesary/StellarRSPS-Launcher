@@ -35,8 +35,8 @@ java -jar packr_${PACKR_VERSION}.jar \
     packr/win-x64-config.json
 
 tools/rcedit-x64 native-win64/Defiled.exe \
-  --application-manifest packr/app.manifest \
+  --application-manifest packr/runelite.manifest \
   --set-icon app.ico
 
 # We use the filtered iss file
-iscc target/filtered-resources/app.iss
+iscc target/filtered-resources/runelite.iss
