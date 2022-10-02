@@ -1,9 +1,9 @@
 {
   "platform": "windows32",
   "jdk": "win32-jdk",
-  "executable": "Elvarg",
+  "executable": "Defiled",
   "classpath": [
-    "target/Elvarg.jar"
+    "target/Defiled.jar"
   ],
   "mainclass": "net.runelite.launcher.Launcher",
   "vmargs": [

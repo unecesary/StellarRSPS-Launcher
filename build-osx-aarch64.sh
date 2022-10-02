@@ -43,21 +43,21 @@ echo "f51577b005a51331b822a18122ce08fca58cf6fee91f071d5a16354815bbe1e3  packr_${
 java -jar packr_${PACKR_VERSION}.jar \
 	packr/macos-aarch64-config.json
 
-cp target/filtered-resources/Info.plist native-osx-aarch64/Elvarg.app/Contents
+cp target/filtered-resources/Info.plist native-osx-aarch64/Defiled.app/Contents
 
-echo Setting world execute permissions on Elvarg
-pushd native-osx-aarch64/Elvarg.app
-chmod g+x,o+x Contents/MacOS/Elvarg
+echo Setting world execute permissions on Defiled
+pushd native-osx-aarch64/Defiled.app
+chmod g+x,o+x Contents/MacOS/Defiled
 popd
 
-codesign -f -s "${SIGNING_IDENTITY}" --entitlements osx/signing.entitlements --options runtime native-osx-aarch64/Elvarg.app || true
+codesign -f -s "${SIGNING_IDENTITY}" --entitlements osx/signing.entitlements --options runtime native-osx-aarch64/Defiled.app || true
 
 # create-dmg exits with an error code due to no code signing, but is still okay
-create-dmg native-osx-aarch64/Elvarg.app native-osx-aarch64/ || true
+create-dmg native-osx-aarch64/Defiled.app native-osx-aarch64/ || true
 
-mv native-osx-aarch64/Elvarg\ *.dmg native-osx-aarch64/Elvarg-aarch64.dmg
+mv native-osx-aarch64/Defiled\ *.dmg native-osx-aarch64/Defiled-aarch64.dmg
 
 # Notarize app
-if xcrun notarytool submit native-osx-aarch64/Elvarg-aarch64.dmg --wait --keychain-profile "AC_PASSWORD" ; then
-    xcrun stapler staple native-osx-aarch64/Elvarg-aarch64.dmg
+if xcrun notarytool submit native-osx-aarch64/Defiled-aarch64.dmg --wait --keychain-profile "AC_PASSWORD" ; then
+    xcrun stapler staple native-osx-aarch64/Defiled-aarch64.dmg
 fi
