@@ -39,4 +39,4 @@ tools/rcedit-x64 native-win32/Defiled.exe \
   --set-icon runelite.ico
 
 # We use the filtered iss file
-iscc target/filtered-resources/runelite32.iss
+iscc target/filtered-resources/app32.iss
