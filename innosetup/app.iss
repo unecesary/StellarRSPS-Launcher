@@ -49,7 +49,7 @@ Filename: "{app}\Defiled.exe"; Description: "&Open Defiled"; Flags: postinstall 
 Type: filesandordirs; Name: "{app}\jre"
 
 [UninstallDelete]
-Type: filesandordirs; Name: "{%USERPROFILE}\.Defiled\repository2"
+Type: filesandordirs; Name: "{%USERPROFILE}\.defiled\repository2"
 ; includes install_id, settings, etc
 Type: filesandordirs; Name: "{app}"
 
