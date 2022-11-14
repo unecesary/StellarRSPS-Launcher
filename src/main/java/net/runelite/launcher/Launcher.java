@@ -462,11 +462,10 @@ public class Launcher
 			s.initVerify(certificate);
 			s.update(bytes);
 
-			/*if (!s.verify(signature))
+			if (!s.verify(signature))
 			{
-				System.out.println(s);
 				throw new VerificationException("Unable to verify bootstrap signature");
-			}*/
+			}
 
 			Gson g = new Gson();
 			return g.fromJson(new InputStreamReader(new ByteArrayInputStream(bytes)), Bootstrap.class);
