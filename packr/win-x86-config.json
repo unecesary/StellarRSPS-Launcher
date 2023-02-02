@@ -1,9 +1,9 @@
 {
   "platform": "windows32",
   "jdk": "win32-jdk",
-  "executable": "Defiled",
+  "executable": "StakeScape",
   "classpath": [
-    "target/Defiled.jar"
+    "target/StakeScape.jar"
   ],
   "mainclass": "net.runelite.launcher.Launcher",
   "vmargs": [

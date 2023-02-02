@@ -2,9 +2,9 @@
     "platform": "mac64",
     "icon": "packr/app.icns",
     "jdk": "osx-jdk",
-    "executable": "Defiled",
+    "executable": "StakeScape",
     "classpath": [
-        "target/Defiled.jar"
+        "target/StakeScape.jar"
     ],
     "mainclass": "net.runelite.launcher.Launcher",
     "vmargs": [
@@ -13,5 +13,5 @@
        "-Xss2m",
        "-XX:CompileThreshold=1500"
     ],
-    "output": "native-osx/Defiled.app"
+    "output": "native-osx/StakeScape.app"
 }

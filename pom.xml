@@ -30,8 +30,8 @@
 	<groupId>net.runelite</groupId>
 	<artifactId>launcher</artifactId>
 	<version>1.0</version>
-	<name>Defiled Launcher</name>
-	<description>Launcher for Defiled client</description>
+	<name>StakeScape Launcher</name>
+	<description>Launcher for StakeScape client</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -152,7 +152,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>Defiled</finalName>
+		<finalName>StakeScape</finalName>
 
 		<resources>
 			<resource>

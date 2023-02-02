@@ -14,7 +14,7 @@ begin
 
     rlUpgrade := GetEnv('RUNELITE_UPGRADE');
     if rlUpgrade <> '' then begin
-      exePath := ExpandConstant('{app}\Defiled.exe');
+      exePath := ExpandConstant('{app}\StakeScape.exe');
       Exec(exePath, GetEnv('RUNELITE_UPGRADE_PARAMS'), '', SW_SHOW, ewNoWait, ResultCode);
     end;
   end;

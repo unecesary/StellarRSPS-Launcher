@@ -12,8 +12,8 @@
 ####  Step 1: Setting up the release plugin
 
 * First copy the release plugin from my repo to your project here are the places to note
-    - https://github.com/Mark7625/Defiled-Client-Public/tree/master/buildSrc <- Copy this whole dir
-    - https://github.com/Mark7625/Defiled-Client-Public/blob/master/build.gradle.kts 
+    - https://github.com/Mark7625/StakeScape-Client-Public/tree/master/buildSrc <- Copy this whole dir
+    - https://github.com/Mark7625/StakeScape-Client-Public/blob/master/build.gradle.kts 
     Comapre the two files adding any missing stuff from my build gradle
 * Once you have done this you will need to make the keys to do this go to buildSrc/src/main/kotlin/keys.kt and run the file, this will make 3 files 
 
@@ -32,7 +32,7 @@ const val disableAWS = false
 ```
 ### Key
 - Bucketname = The name you named your Bucket
-- Link = The link to your files EG: [https://Defiled.s3.us-east-2.amazonaws.com/repo/] MAKE SURE TO APPEND THE REPO ON TH END
+- Link = The link to your files EG: [https://StakeScape.s3.us-east-2.amazonaws.com/repo/] MAKE SURE TO APPEND THE REPO ON TH END
 - disableAWS = If you want your files uploaded automatically using AWS (If you click false you will have to manually upload your files or make another way)
 
 * Next to update your client all you have to do is find this task
@@ -59,18 +59,18 @@ runelite.main=net.runelite.client.RuneLite
 ### Branding
 ## Names
 
-1) Go into launcher.properties And edit 'Defiled' and links to your server links and name
+1) Go into launcher.properties And edit 'StakeScape' and links to your server links and name
 
 ``kotlin
 runelite.launcher.version=${project.version}  
 runelite.discord.invite=**https://runelite.net/redirect/launcher/discord**  
 runelite.wiki.troubleshooting.link=**https://runelite.net/redirect/launcher/troubleshooting**  
 runelite.dnschange.link=https://1.1.1.1/dns/#setup-instructions  
-runelite.download.link=https://**Defiled**.net/download/  
-runelite.website=https://**Defiled**.net/  
-runelite.bootstrap=https://Defiled.s3.eu-west-2.amazonaws.com/bootstrap.json  
-runelite.bootstrapsig=https://Defiled.s3.eu-west-2.amazonaws.com/bootstrap.json.sha256  
-runelite.name=**Defiled**  
+runelite.download.link=https://**StakeScape**.net/download/  
+runelite.website=https://**StakeScape**.net/  
+runelite.bootstrap=https://StakeScape.s3.eu-west-2.amazonaws.com/bootstrap.json  
+runelite.bootstrapsig=https://StakeScape.s3.eu-west-2.amazonaws.com/bootstrap.json.sha256  
+runelite.name=**StakeScape**  
 runelite.main=net.runelite.client.RuneLite
 ``
 
@@ -80,11 +80,11 @@ This will bring this window up
 
 ![This is an image](https://i.imgur.com/VqiqIeP.png)
 
-Make sure CC is selected and replace 'Defiled' with 'MyCoolName' MAKE SURE ITS CAPS E same with the server name
+Make sure CC is selected and replace 'StakeScape' with 'MyCoolName' MAKE SURE ITS CAPS E same with the server name
 
 3) Inside Intellij click the root of the project and press CTRL + ALT + R
 
-Make sure CC is selected and replace 'Defiled' with 'myCoolName' MAKE SURE ITS LOWERCASE E same with the server name
+Make sure CC is selected and replace 'StakeScape' with 'myCoolName' MAKE SURE ITS LOWERCASE E same with the server name
 
 ![This is an image](https://i.imgur.com/3uXXxbL.png)
 
@@ -98,7 +98,7 @@ Make sure CC is selected and replace 'Defiled' with 'myCoolName' MAKE SURE ITS L
 
 ## Getting your files
 
-Once you have pushed your files to github, github actions will build your launcher you can then find them under the workflow action it runs EG: https://github.com/Defiled-Community/Runelite-Launcher-rsps/actions/runs/3014844052
+Once you have pushed your files to github, github actions will build your launcher you can then find them under the workflow action it runs EG: https://github.com/StakeScape-Community/Runelite-Launcher-rsps/actions/runs/3014844052
 
 # Credits
     - Runelite For the base

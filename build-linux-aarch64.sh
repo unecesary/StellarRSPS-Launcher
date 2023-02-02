@@ -35,22 +35,22 @@ echo "f200fb7088dbb5e61e0835fe7b0d7fc1310beda192dacd764927567dcd7c4f0f  packr_${
 # Note: Host umask may have checked out this directory with g/o permissions blank
 chmod -R u=rwX,go=rX appimage
 # ...ditto for the build process
-chmod 644 target/Defiled.jar
+chmod 644 target/StakeScape.jar
 
 rm -rf native-linux-aarch64
 
 java -jar packr_${PACKR_VERSION}.jar \
     packr/linux-aarch64-config.json
 
-pushd native-linux-aarch64/Defiled.AppDir
+pushd native-linux-aarch64/StakeScape.AppDir
 mkdir -p jre/lib/amd64/server/
 ln -s ../../server/libjvm.so jre/lib/amd64/server/ # packr looks for libjvm at this hardcoded path
 
 # Symlink AppRun -> RuneLite
-ln -s Defiled AppRun
+ln -s StakeScape AppRun
 
 # Ensure RuneLite is executable to all users
-chmod 755 Defiled
+chmod 755 StakeScape
 popd
 
 if ! [ -f appimagetool-x86_64.AppImage ] ; then
@@ -70,5 +70,5 @@ echo "d2624ce8cc2c64ef76ba986166ad67f07110cdbf85112ace4f91611bc634c96a  runtime-
 
 ARCH=arm_aarch64 ./appimagetool-x86_64.AppImage \
 	--runtime-file runtime-aarch64  \
-	native-linux-aarch64/Defiled.AppDir/ \
-	native-linux-aarch64/Defiled-aarch64.AppImage
+	native-linux-aarch64/StakeScape.AppDir/ \
+	native-linux-aarch64/StakeScape-aarch64.AppImage
