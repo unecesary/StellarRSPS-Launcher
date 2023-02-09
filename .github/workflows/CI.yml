@@ -61,8 +61,8 @@ jobs:
       with:
         name: windows
         path: |
-          StakeScapeSetup64.exe
-          StakeScapeSetup32.exe
+          YanilleSetup64.exe
+          YanilleSetup32.exe
         if-no-files-found: error
   linux:
     runs-on: ubuntu-20.04
@@ -94,14 +94,14 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: jar
-        path: target/StakeScape.jar
+        path: target/Yanille.jar
         if-no-files-found: error
     - uses: actions/upload-artifact@v3
       with:
         name: linux
         path: |
-          native-linux-x86_64/StakeScape.AppImage
-          native-linux-aarch64/StakeScape-aarch64.AppImage
+          native-linux-x86_64/Yanille.AppImage
+          native-linux-aarch64/Yanille-aarch64.AppImage
         if-no-files-found: error
   macos:
     runs-on: macos-11
@@ -142,6 +142,6 @@ jobs:
       with:
         name: macos
         path: |
-          native-osx/StakeScape-x64.dmg
-          native-osx-aarch64/StakeScape-aarch64.dmg
+          native-osx/Yanille-x64.dmg
+          native-osx-aarch64/Yanille-aarch64.dmg
         if-no-files-found: error

@@ -30,8 +30,8 @@
 	<groupId>net.runelite</groupId>
 	<artifactId>launcher</artifactId>
 	<version>1.0</version>
-	<name>StakeScape Launcher</name>
-	<description>Launcher for StakeScape client</description>
+	<name>Yanille Launcher</name>
+	<description>Launcher for Yanille client</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -152,7 +152,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>StakeScape</finalName>
+		<finalName>Yanille</finalName>
 
 		<resources>
 			<resource>
