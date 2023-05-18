@@ -1,9 +1,9 @@
 {
   "platform": "windows64",
   "jdk": "win64-jdk",
-  "executable": "Yanille",
+  "executable": "StellarRSPS",
   "classpath": [
-    "target/Yanille.jar"
+    "target/StellarRSPS.jar"
   ],
   "mainclass": "net.runelite.launcher.Launcher",
   "vmargs": [

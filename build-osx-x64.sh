@@ -41,27 +41,27 @@ echo "f51577b005a51331b822a18122ce08fca58cf6fee91f071d5a16354815bbe1e3  packr_${
 java -jar packr_${PACKR_VERSION}.jar \
     packr/macos-x64-config.json
 
-cp target/filtered-resources/Info.plist native-osx/Yanille.app/Contents
+cp target/filtered-resources/Info.plist native-osx/StellarRSPS.app/Contents
 
-echo Setting world execute permissions on Yanille
-pushd native-osx/Yanille.app
-chmod g+x,o+x Contents/MacOS/Yanille
+echo Setting world execute permissions on StellarRSPS
+pushd native-osx/StellarRSPS.app
+chmod g+x,o+x Contents/MacOS/StellarRSPS
 popd
 
-codesign -f -s "${SIGNING_IDENTITY}" --entitlements osx/signing.entitlements --options runtime native-osx/Yanille.app || true
+codesign -f -s "${SIGNING_IDENTITY}" --entitlements osx/signing.entitlements --options runtime native-osx/StellarRSPS.app || true
 
 # create-dmg exits with an error code due to no code signing, but is still okay
 # note we use Adam-/create-dmg as upstream does not support UDBZ
-create-dmg --format UDBZ native-osx/Yanille.app native-osx/ || true
+create-dmg --format UDBZ native-osx/StellarRSPS.app native-osx/ || true
 
-mv native-osx/Yanille\ *.dmg native-osx/Yanille-x64.dmg
+mv native-osx/StellarRSPS\ *.dmg native-osx/StellarRSPS-x64.dmg
 
-if ! hdiutil imageinfo native-osx/Yanille-x64.dmg | grep -q "Format: UDBZ" ; then
+if ! hdiutil imageinfo native-osx/StellarRSPS-x64.dmg | grep -q "Format: UDBZ" ; then
     echo "Format of resulting dmg was not UDBZ, make sure your create-dmg has support for --format"
     exit 1
 fi
 
 # Notarize app
-if xcrun notarytool submit native-osx/Yanille-x64.dmg --wait --keychain-profile "AC_PASSWORD" ; then
-    xcrun stapler staple native-osx/Yanille-x64.dmg
+if xcrun notarytool submit native-osx/StellarRSPS-x64.dmg --wait --keychain-profile "AC_PASSWORD" ; then
+    xcrun stapler staple native-osx/StellarRSPS-x64.dmg
 fi

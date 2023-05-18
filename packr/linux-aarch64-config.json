@@ -1,9 +1,9 @@
 {
     "platform": "linuxaarch64",
     "jdk": "linux-aarch64-jdk",
-    "executable": "Yanille",
+    "executable": "StellarRSPS",
     "classpath": [
-        "target/Yanille.jar"
+        "target/StellarRSPS.jar"
     ],
     "mainclass": "net.runelite.launcher.Launcher",
     "vmargs": [
@@ -12,7 +12,7 @@
        "-Xss2m",
        "-XX:CompileThreshold=1500"
     ],
-    "output": "native-linux-aarch64/Yanille.AppDir/",
+    "output": "native-linux-aarch64/StellarRSPS.AppDir/",
     "resources": [
       "target/filtered-resources/app.desktop",
       "appimage/app.png"

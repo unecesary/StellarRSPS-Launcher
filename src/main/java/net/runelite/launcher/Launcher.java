@@ -116,12 +116,12 @@ import org.slf4j.LoggerFactory;
 @Slf4j
 public class Launcher
 {
-	private static final File RUNELITE_DIR = new File(System.getProperty("user.home"), ".Yanille");
+	private static final File RUNELITE_DIR = new File(System.getProperty("user.home"), ".StellarRSPS");
 	public static final File LOGS_DIR = new File(RUNELITE_DIR, "logs");
 	private static final File REPO_DIR = new File(RUNELITE_DIR, "repository2");
 	public static final File CRASH_FILES = new File(LOGS_DIR, "jvm_crash_pid_%p.log");
 	private static final String USER_AGENT = "RuneLite/" + LauncherProperties.getVersion();
-	private static final String LAUNCHER_EXECUTABLE_NAME = "Yanille.exe";
+	private static final String LAUNCHER_EXECUTABLE_NAME = "StellarRSPS.exe";
 	private static final String LAUNCHER_SETTINGS = "settings.json";
 
 	public static void main(String[] args)
