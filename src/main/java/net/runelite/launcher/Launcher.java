@@ -184,7 +184,7 @@ public class Launcher
 		final boolean insecureSkipTlsVerification = options.has("insecure-skip-tls-verification");
 		final boolean postInstall = options.has("postinstall");
 
-		// Setup debug
+		// Setup debug.
 		final boolean isDebug = options.has("debug");
 		LOGS_DIR.mkdirs();
 
