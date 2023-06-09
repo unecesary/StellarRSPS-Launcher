@@ -32,7 +32,7 @@
 // users that provide kernel32 functionality themselves.
 // This is ok in the mainstream case, it will just cost
 // an extra instruction calling some functions, which
-// LTCG optimizes away.
+// LTCG optimizes away
 //
 #define _KERNEL32_ 1
 #define _USER32_ 1
