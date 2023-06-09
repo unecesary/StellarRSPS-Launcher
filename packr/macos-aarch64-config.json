@@ -2,9 +2,9 @@
     "platform": "macaarch64",
     "icon": "packr/app.icns",
     "jdk": "osx-aarch64-jdk",
-    "executable": "StellarRSPS",
+    "executable": "SarinRSPS",
     "classpath": [
-        "target/StellarRSPS.jar"
+        "target/SarinRSPS.jar"
     ],
     "mainclass": "net.runelite.launcher.Launcher",
     "vmargs": [
@@ -15,5 +15,5 @@
        "--add-opens=java.desktop/com.apple.eawt=ALL-UNNAMED",
        "--add-opens=java.desktop/sun.awt=ALL-UNNAMED"
     ],
-    "output": "native-osx-aarch64/StellarRSPS.app"
+    "output": "native-osx-aarch64/SarinRSPS.app"
 }

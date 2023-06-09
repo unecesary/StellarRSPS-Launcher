@@ -2,9 +2,9 @@
     "platform": "mac64",
     "icon": "packr/app.icns",
     "jdk": "osx-jdk",
-    "executable": "StellarRSPS",
+    "executable": "SarinRSPS",
     "classpath": [
-        "target/StellarRSPS.jar"
+        "target/SarinRSPS.jar"
     ],
     "mainclass": "net.runelite.launcher.Launcher",
     "vmargs": [
@@ -13,5 +13,5 @@
        "-Xss2m",
        "-XX:CompileThreshold=1500"
     ],
-    "output": "native-osx/StellarRSPS.app"
+    "output": "native-osx/SarinRSPS.app"
 }

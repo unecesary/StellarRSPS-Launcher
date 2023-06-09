@@ -30,8 +30,8 @@
 	<groupId>net.runelite</groupId>
 	<artifactId>launcher</artifactId>
 	<version>1.0</version>
-	<name>StellarRSPS Launcher</name>
-	<description>Launcher for StellarRSPS client</description>
+	<name>SarinRSPS Launcher</name>
+	<description>Launcher for SarinRSPS client</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -152,7 +152,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>StellarRSPS</finalName>
+		<finalName>SarinRSPS</finalName>
 
 		<resources>
 			<resource>

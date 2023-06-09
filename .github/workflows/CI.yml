@@ -61,8 +61,8 @@ jobs:
       with:
         name: windows
         path: |
-          StellarRSPSSetup64.exe
-          StellarRSPSSetup32.exe
+          SarinRSPSSetup64.exe
+          SarinRSPSSetup32.exe
         if-no-files-found: error
   linux:
     runs-on: ubuntu-20.04
@@ -94,14 +94,14 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: jar
-        path: target/StellarRSPS.jar
+        path: target/SarinRSPS.jar
         if-no-files-found: error
     - uses: actions/upload-artifact@v3
       with:
         name: linux
         path: |
-          native-linux-x86_64/StellarRSPS.AppImage
-          native-linux-aarch64/StellarRSPS-aarch64.AppImage
+          native-linux-x86_64/SarinRSPS.AppImage
+          native-linux-aarch64/SarinRSPS-aarch64.AppImage
         if-no-files-found: error
   macos:
     runs-on: macos-11
@@ -142,6 +142,6 @@ jobs:
       with:
         name: macos
         path: |
-          native-osx/StellarRSPS-x64.dmg
-          native-osx-aarch64/StellarRSPS-aarch64.dmg
+          native-osx/SarinRSPS-x64.dmg
+          native-osx-aarch64/SarinRSPS-aarch64.dmg
         if-no-files-found: error

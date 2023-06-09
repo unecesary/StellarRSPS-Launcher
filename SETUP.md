@@ -12,8 +12,8 @@
 ####  Step 1: Setting up the release plugin
 
 * First copy the release plugin from my repo to your project here are the places to note
-    - https://github.com/Mark7625/StellarRSPS-Client-Public/tree/master/buildSrc <- Copy this whole dir
-    - https://github.com/Mark7625/StellarRSPS-Client-Public/blob/master/build.gradle.kts 
+    - https://github.com/Mark7625/SarinRSPS-Client-Public/tree/master/buildSrc <- Copy this whole dir
+    - https://github.com/Mark7625/SarinRSPS-Client-Public/blob/master/build.gradle.kts 
     Comapre the two files adding any missing stuff from my build gradle
 * Once you have done this you will need to make the keys to do this go to buildSrc/src/main/kotlin/keys.kt and run the file, this will make 3 files 
 
@@ -59,18 +59,18 @@ runelite.main=net.runelite.client.RuneLite
 ### Branding
 ## Names
 
-1) Go into launcher.properties And edit 'StellarRSPS' and links to your server links and name
+1) Go into launcher.properties And edit 'SarinRSPS' and links to your server links and name
 
 ``kotlin
 runelite.launcher.version=${project.version}  
 runelite.discord.invite=**https://runelite.net/redirect/launcher/discord**  
 runelite.wiki.troubleshooting.link=**https://runelite.net/redirect/launcher/troubleshooting**  
 runelite.dnschange.link=https://1.1.1.1/dns/#setup-instructions  
-runelite.download.link=https://**StellarRSPS**.net/download/  
-runelite.website=https://**StellarRSPS**.net/  
+runelite.download.link=https://**SarinRSPS**.net/download/  
+runelite.website=https://**SarinRSPS**.net/  
 runelite.bootstrap=https://stellarrsps.s3.eu-west-2.amazonaws.com/bootstrap.json  
 runelite.bootstrapsig=https://stellarrsps.s3.eu-west-2.amazonaws.com/bootstrap.json.sha256  
-runelite.name=**StellarRSPS**  
+runelite.name=**SarinRSPS**  
 runelite.main=net.runelite.client.RuneLite
 ``
 
@@ -80,11 +80,11 @@ This will bring this window up
 
 ![This is an image](https://i.imgur.com/VqiqIeP.png)
 
-Make sure CC is selected and replace 'StellarRSPS' with 'MyCoolName' MAKE SURE ITS CAPS E same with the server name
+Make sure CC is selected and replace 'SarinRSPS' with 'MyCoolName' MAKE SURE ITS CAPS E same with the server name
 
 3) Inside Intellij click the root of the project and press CTRL + ALT + R
 
-Make sure CC is selected and replace 'StellarRSPS' with 'myCoolName' MAKE SURE ITS LOWERCASE E same with the server name
+Make sure CC is selected and replace 'SarinRSPS' with 'myCoolName' MAKE SURE ITS LOWERCASE E same with the server name
 
 ![This is an image](https://i.imgur.com/3uXXxbL.png)
 
