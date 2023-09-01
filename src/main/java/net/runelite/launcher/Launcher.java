@@ -123,6 +123,7 @@ public class Launcher
 	private static final String USER_AGENT = "RuneLite/" + LauncherProperties.getVersion();
 	private static final String LAUNCHER_EXECUTABLE_NAME = "SarinRSPS.exe";
 	private static final String LAUNCHER_SETTINGS = "settings.json";
+	//Test commit for force update on Github
 
 	public static void main(String[] args)
 	{
