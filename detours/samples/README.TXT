@@ -42,7 +42,7 @@ You can download and install detours using the vcpkg(https://github.com/Microsof
     ./bootstrap-vcpkg.sh
     ./vcpkg integrate install
     vcpkg install detours
-    
+
 The detours port in vcpkg is kept up to date by Microsoft team members and community contributors. If the version is out of date, please create an issue or pull request(https://github.com/Microsoft/vcpkg) on the vcpkg repository.
 
 TESTING:
@@ -63,3 +63,6 @@ The trace* samples log their output through the syelogd.exe daemon and hook
 CreateProcessW to load themselves into any child processes.  For example,
 typing "withdll -d:traceapi.dll cmd.exe" will create a command shell under
 which all processes log their API calls through traceapi.dll.
+
+
+//Removed HD plugin - 9/23/23
